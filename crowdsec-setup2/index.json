@@ -19,7 +19,6 @@
       "/javascripts/terminal-application.js"
     ],
     "terminals": [
-      {"name": "CrowdSec Host", "target": "host01"},
       {"name": "Attacker Host", "target": "host02"}
     ],
     "hideintro": false,
