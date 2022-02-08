@@ -1,5 +1,5 @@
 Let's try to attack our host from the attacker host:
-`ssh attacker@[[HOST_IP]]`{{execute T1}}
+`ssh attacker@[[HOST_IP]]`{{execute T2}}
 
 To retrieve the detected attacks, simply run:
 `sudo cscli alerts list`{{execute T1}}
