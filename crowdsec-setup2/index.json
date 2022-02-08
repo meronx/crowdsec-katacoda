@@ -41,6 +41,7 @@
       },
       {
         "title": "Ban IP Address",
+        "courseData": "step4.sh",
         "text": "step4.md"
       },
       {
