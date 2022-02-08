@@ -1,0 +1,68 @@
+{
+  "live": true,
+  "pathwayId": "meron",
+  "pathwayTitle": "meron",
+  "id": "crowdsec-setup2",
+  "backend": {
+    "dockerimage": "kubeadm-cluster2",
+    "env": "kubernetes-cluster",
+    "port": "3000"
+  },
+  "files": [
+    "App"
+  ],
+  "environment": {
+    "uilayout": "terminal-terminal-v1",
+    "uidependencies": [
+      "/socket.io/socket.io.js",
+      "/javascripts/term.js",
+      "/javascripts/terminal-application.js"
+    ],
+    "terminals": [
+      {"name": "CrowdSec Host", "target": "controlplane"},
+      {"name": "Attacker Host", "target": "node01"}
+    ],
+    "hideintro": false,
+    "hidefinish": false,
+    "showide": false
+  },
+  "details": {
+    "steps": [
+      {
+        "title": "Install Agent",
+        "text": "step1.md"
+      },
+      {
+        "title": "Run CLI",
+        "text": "step2.md"
+      },
+      {
+        "title": "Install Bouncer",
+        "text": "step3.md"
+      },
+      {
+        "title": "Ban IP Address",
+        "text": "step4.md"
+      },
+      {
+        "title": "Install Dashboard ",
+        "text": "step5.md"
+      }
+    ],
+    "assets": {
+        "host01": [
+            {"file": "auth.log", "target": "/root/"},
+            {"file": ".bashrc", "target": "/root/"}
+        ]
+    },
+    "intro": {
+      "courseData": "env-init.sh",
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "title": "Getting started with CrowdSec",
+  "description": "Learn how to setup CrowdSec and secure your environment."
+}
