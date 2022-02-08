@@ -12,7 +12,7 @@
     "App"
   ],
   "environment": {
-    "uilayout": "terminal-terminal-v1",
+    "uilayout": "terminal",
     "uidependencies": [
       "/socket.io/socket.io.js",
       "/javascripts/term.js",
