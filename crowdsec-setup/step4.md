@@ -1,4 +1,5 @@
 Let's try to attack our host from the attacker host:
+`apt install -y hydra`{{execute T2}}
 `hydra -l root -p admin [[HOST_IP]] -t 4 ssh`{{execute T2}}
 
 To retrieve the detected attacks, simply run:
