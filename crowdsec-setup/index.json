@@ -33,7 +33,11 @@
       },
       {
         "title": "Run CLI",
-        "text": "step2.md"
+        "text": "step2_1.md"
+      },
+      {
+        "title": "Run CLI",
+        "text": "step2_2.md"
       },
       {
         "title": "Install Bouncer",
@@ -46,7 +50,11 @@
       },
       {
         "title": "Install Dashboard ",
-        "text": "step5.md"
+        "text": "step5-1.md"
+      },
+      {
+        "title": "Install Dashboard ",
+        "text": "step5-2.md"
       }
     ],
     "assets": {
