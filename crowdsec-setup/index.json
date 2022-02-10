@@ -1,22 +1,25 @@
 {
   "live": true,
-  "pathwayId": "meron",
-  "pathwayTitle": "meron",
-  "id": "crowdsec-setup",
+  "pathwayId": "crowdsec",
+  "pathwayTitle": "crowdsec",
+  "id": "crowdsec-setup2",
   "backend": {
-    "dockerimage": "dind1604-direct",
-    "env": "ubuntu",
+    "dockerimage": "kubeadm-cluster2",
+    "env": "kubernetes-cluster",
     "port": "3000"
   },
   "files": [
     "App"
   ],
   "environment": {
-    "uilayout": "terminal-v1",
+    "uilayout": "terminal",
     "uidependencies": [
       "/socket.io/socket.io.js",
       "/javascripts/term.js",
       "/javascripts/terminal-application.js"
+    ],
+    "terminals": [
+      {"name": "Attacker Host", "target": "host02"}
     ],
     "hideintro": false,
     "hidefinish": false,
@@ -38,6 +41,7 @@
       },
       {
         "title": "Ban IP Address",
+        "courseData": "step4.sh",
         "text": "step4.md"
       },
       {

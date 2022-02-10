@@ -1,11 +1,12 @@
-Before we can start, we have to add the repository to get access to the latest package versions.
+Before we can start, we have to add the repository.
+This gives us access to the latest package versions:
+`curl -s https://packagecloud.io/install/repositories/crowdsec/crowdsec/script.deb.sh | sudo bash`{{execute T1}}
 
-Add the repository with the command: 
-`curl -s https://packagecloud.io/install/repositories/crowdsec/crowdsec/script.deb.sh | sudo bash`{{execute}}
+Great, now we can install the `CrowdSec agent`:
+`sudo apt install crowdsec -y`{{execute T1}}
 
-Great, we are now able to install the CrowdSec agent:
-`sudo apt install crowdsec -y`{{execute}}
+>`CrowdSec agent` allows you to detect bad behaviors by analyzing log files and other data sources.
 
-During the installation, all supported services are automatically configured in CrowdSec.
-To check or extend the settings again, simply run the command:
-`/usr/share/crowdsec/wizard.sh -c`{{execute}}
+During the installation, all supported services will be automatically detected and configured.
+To check or extend the settings again, simply run the `Wizard`:
+`/usr/share/crowdsec/wizard.sh -c`{{execute T1}}
