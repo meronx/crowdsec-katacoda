@@ -4,9 +4,7 @@
   "pathwayTitle": "crowdsec",
   "id": "crowdsec-setup2",
   "backend": {
-    "dockerimage": "kubeadm-cluster2",
-    "env": "kubernetes-cluster",
-    "port": "3000"
+    "imageid": "kubernetes-kubeadm-2nodes"
   },
   "files": [
     "App"
