@@ -1,9 +1,17 @@
-Let's try to attack our host from the attacker host:
-`apt install -y hydra`{{execute T2}}
-`hydra -l root -p admin [[HOST_IP]] -t 4 ssh`{{execute T2}}
+Let's try to attack our host from the attacker host. To do this, open a new terminal tab and connect to the attacker host:
 
-To retrieve the detected attacks, simply run:
-`sudo cscli alerts list`{{execute T1}}
+`ssh node01`{{execute T2}}
+
+Now we are connected to the attacker host and have to install `hydra` to start an attack:
+
+`apt install -y hydra`{{execute T2}}
+
+`hydra -l admin -p admin node01 -t 4 ssh`{{execute T2}}
+
+To retrieve the detected attacks, switch back to the first tab and run on the crowdsec host:
+
+`cscli alerts list`{{execute T1}}
 
 To see which alerts have caused bouncer actions, just run:
-`sudo cscli decisions list`{{execute T1}}
+
+`cscli decisions list`{{execute T1}}

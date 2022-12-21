@@ -1,4 +1,16 @@
-# CrowdSec lessons for Katacoda
-This repository contains useful content to build interactive [CrowdSec](https://crowdsec.net) environments on [Katacoda](https://katacoda.com).
+# CrowdSec lessons for Killercoda
+This repository contains scenarios to build interactive [CrowdSec](https://crowdsec.net) lab environments on [Killercoda](https://killercoda.com).
 
-View the lessons [here](https://katacoda.com/crowdsec).
+A live demo can be found [here](https://killercoda.com/meron).
+
+## Getting Started
+These instructions will get you a copy of the project up and running on your personal creator space on [Killercoda](https://killercoda.com).
+
+### Prerequisites
+The following steps are required before setup:
+- Clone this project to your own personal repository
+- Register on [Killercoda](https://killercoda.com/login) to get a personal creator space.
+ 
+
+### Installing
+The steps to set up a personal creator space can be found [here](https://killercoda.com/creators/get-started).
